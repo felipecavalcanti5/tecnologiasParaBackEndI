@@ -1,2 +1,71 @@
 https://start.spring.io/
 
+AULA 01
+
+Framework: conjunto de bibliotecas voltado para aumento da produtividade da linguagem; 
+
+Spring Boot: módulo do ecossistema Spring voltado para o ganho de tempo relativo a configurações, pré-configurações, gerenciamento de dependências.
+Spring Data: módulo que vai abstrair os objetos do java no banco de dados 
+Spring Security: módulo voltado para segurança > autenticação, autorização…
+Spring Cloud: microsserviços (Netflix “tudum” OSS)
+
+
+“persistir” = armazenar
+
+https://start.spring.io/
+
+AULA 02
+
+JSON = Java Script Object Notation 
+Visual mais amigável para o dev, usuário, etc.
+“Traduz” a mensagem que o Front “pede” ao Back-end
+
+XML = Conjunto de regras anterior ao JSON 
+
+API = Application Programming Language 
+comunicação entre plataformas;
+Rest API/ API RESTful = API em conformidade com a arquitetura (conjunto de princípios) REST (Representational State Transfer); API completa 
+
+Protocolo http = Hypertext Transfer Protocol
+Conjunto de regras de comunicação cliente-servidor;
+requests & responses;
+
+Verbos http:
+GET: obtém (pega) um recurso específico;
+POST: criação de recursos/ adiciona informações a recursos;
+PUT: atualiza o recurso inteiro;
+PATCH: atualiza apenas partes específicas do recurso; 
+DELETE: deleta o dado;
+
+Status http:
+1xx (a solicitação continua)
+2xx success. ex.: 200(sucesso/ok)
+3xx Redirection. ex.: 301: permanent redirect
+4xx Client error. ex.: 404: not found
+5xx Server Error. ex.: 502: bad gateway
+
+
+AULA 03
+
+End-point =
+
+AULA 04
+(Faltei)
+
+Maven é um gerenciador de dependências. Ao abrir um projeto Spring em uma IDE, é possível identificar um carregamento (sync) de dependências. Quem executa esse papel é o Maven.
+Tudo com ‘@’ é chamado anotação 
+@Entity serve para sinalizar para o banco de dados de que uma determinada classe que está sendo criada é uma tabel;
+@Id Sinaliza para o Spring que o termo abaixo se trata de um Id. É considerado boa prática colocar a variável ‘id’ no começo da classe (primeira coluna na tabela para melhor identificação);
+@GeneratedValue(strategy = GenerationType.IDENTITY): 'informa' ao Spring que o valor gerado para o id vai seguir uma estratégia;
+@Data: dota o código, a partir do Lombok, de um aumento de produtividade: equivale a fazer os gets e sets;
+@AllArgsConstructor e @NoArgsConstructor: Cria construtores com e sem argumentos, respectivamente;
+@Repository: 'notifica' o Spring sobre a ligação do java com o BD
+
+Repository: o pacote Repository é a ponte entre o Java e o Banco de Dados;
+Interface no java funciona como um "contrato entre partes". Serve como garantia de organização, segurança.
+
+AULA 05
+
+
+
+
