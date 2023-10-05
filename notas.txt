@@ -54,18 +54,39 @@ AULA 04
 
 Maven é um gerenciador de dependências. Ao abrir um projeto Spring em uma IDE, é possível identificar um carregamento (sync) de dependências. Quem executa esse papel é o Maven.
 Tudo com ‘@’ é chamado anotação 
-@Entity serve para sinalizar para o banco de dados de que uma determinada classe que está sendo criada é uma tabel;
+@Entity serve para sinalizar para o banco de dados de que uma determinada classe que está sendo criada é uma tabela;
 @Id Sinaliza para o Spring que o termo abaixo se trata de um Id. É considerado boa prática colocar a variável ‘id’ no começo da classe (primeira coluna na tabela para melhor identificação);
 @GeneratedValue(strategy = GenerationType.IDENTITY): 'informa' ao Spring que o valor gerado para o id vai seguir uma estratégia;
 @Data: dota o código, a partir do Lombok, de um aumento de produtividade: equivale a fazer os gets e sets;
 @AllArgsConstructor e @NoArgsConstructor: Cria construtores com e sem argumentos, respectivamente;
 @Repository: 'notifica' o Spring sobre a ligação do java com o BD
 
-Repository: o pacote Repository é a ponte entre o Java e o Banco de Dados;
+MODEL: É onde minha classe será modelada
+
+REPOSITORY: o pacote Repository é a ponte entre o Java e o Banco de Dados;
 Interface no java funciona como um "contrato entre partes". Serve como garantia de organização, segurança.
 
 AULA 05
 
+SERVICE: o pacote service cria as regras de negócio para criar o objeto 
+CRUD:
+ - Create
+ - Read
+ - Update
+ - Delete
+
+"Injeção de dependencias"
+@Autowired: é a notificação para o Spring de que será feita uma 'injeção' de dependências do Repository no Service ou do Service no Controller
+
+REST: É a arquitetura que fornece uma padronização para comunicação de back-frontEnd de maneira organizada
+
+CONTROLLER: Orquestrador http
+
+@RestController
+@RequestMapping("/aluno")
+
+@PostMapping
+@ResponseStatus
 
 
 
