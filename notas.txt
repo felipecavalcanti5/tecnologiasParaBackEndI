@@ -80,13 +80,17 @@ CRUD:
 
 REST: É a arquitetura que fornece uma padronização para comunicação de back-frontEnd de maneira organizada
 
-CONTROLLER: Orquestrador http
+CONTROLLER: Orquestrador http. Recebe o AlunoService por meio de @Autowired
 
 @RestController
 @RequestMapping("/aluno")
 
 @PostMapping
 @ResponseStatus
+
+AULA 06
+
+
 
 
 
